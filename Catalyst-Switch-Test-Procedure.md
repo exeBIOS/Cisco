@@ -7,6 +7,6 @@
 3) Wait till the system ${\color{red}REBOOTS !}$
 4) Acces the switch
 5) Configure port 1 in master mode
-6) Test all the 50 ports (connect an RJ45 cable, if the light is green your port is functioning. If not you have a problem)
+6) Test all the 50 ports *connect an RJ45 cable, if the light is green your port is functioning. If not you have a problem*
 >[!note]
 >The lights might take a bit of time to activate **be patient** !
