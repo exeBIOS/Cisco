@@ -2,7 +2,7 @@
 ## Procedure:
 >[!warning]
 >This procedure is a work in progress
-1) Acces to the switch's management interface (`192.168.1.254`)
+1) Acces to the switch's management interface `192.168.1.254`
 2) Reset the switch
 3) Wait till the system ${\color{red}REBOOTS !}$
 4) Acces the switch
