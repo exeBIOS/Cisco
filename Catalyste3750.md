@@ -189,7 +189,71 @@ aaa authentication login default local
 ```
 enable secret <password>
 ```
+## Banners
 
+Lets give our CLI some cool effects
+
+>[!note]
+>These "cool" effects are also here to warn unwanted people on the device the risk they are taking.
+
+We are going to create a login password that will greet people when they type the ssh command or enter the rs232 cable interface.
+
+`switch(config)#`
+```
+banner login @
+
+                 ______________________________    ________         __________      ______  
+_________  _________  __ )___  _/_  __ \_  ___/    __  ___/__      ____(_)_  /_________  /_ 
+_  _ \_  |/_/  _ \_  __  |__  / _  / / /____ \     _____ \__ | /| / /_  /_  __/  ___/_  __ \
+/  __/_>  < /  __/  /_/ /__/ /  / /_/ /____/ /     ____/ /__ |/ |/ /_  / / /_ / /__ _  / / /
+\___//_/|_| \___//_____/ /___/  \____/ /____/      /____/ ____/|__/ /_/  \__/ \___/ /_/ /_/
+
+____________________________________________________________________________________________
+
+                Login with your correct username and correct password.
+____________________________________________________________________________________________
+
+@
+```
+>[tip]
+>You can do cool ASCII art by going on ASCII art generators and typing text like this [ASCII Art generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+>[!warning]
+>The Switch's CLI does **NOT** inlcude other characters then the printable ones. Basically all the letters and symbols that you will find on a basic american querty. You can also visite the followinf website which will indicate the [Printable Characters](https://www.ascii-code.com/characters/printable-characters#:~:text=ASCII%20printable%20characters%20are%20the,text%20and%20other%20visual%20content.)
+
+Now lets make a banner that will appear when the user logs in !
+
+`switch(config)#`
+```
+banner motd @
+                              (        )   (
+                          (   )\ )  ( /(   )\ )
+          (     )   (   ( )\ (()/(  )\()) (()/(
+         ))\ ( /(  ))\  )((_) /(_))((_)\   /(_))
+        /((_))\())/((_)((_)_ (_))    ((_) (_))
+       (_)) ((_)\(_))   | _ )|_ _|  / _ \ / __|
+       / -_)\ \ // -_)  | _ \ | |  | (_) |\__ \
+       \___|/_\_\\___|  |___/|___|  \___/ |___/
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                     #
+#                     WARNING                         #
+#                                                     #
+#     UNAUTHORIZED ACCESS IS STRICTLY PROHIBITED.     #
+#                                                     #
+#   ===============================================   #
+#                                                     #
+#   All activities on this network are monitored      #
+#   and logged for security purposes. Unauthorized    #
+#   access attempts or activities will be reported    #
+#   to the appropriate authorities and may result     #
+#   in disciplinary action, termination of access,    #
+#   and/or legal proceedings.                         #
+#                                                     #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # #
+@
+```
+
+This combo can be awkward while loging in with a serial cable because both the login banner and motd banner will appear at the same tim but when you log in with ssh th login banner will appear then when the password is entered the motd banner will appear.
 ## Conclusion
 
 Here is our configuration so far
@@ -198,6 +262,7 @@ Here is our configuration so far
 sh run
 ```
 ```
+Current configuration : 5364 bytes
 !
 version 12.2
 no service pad
@@ -336,6 +401,42 @@ ip http secure-server
 !
 ip sla enable reaction-alerts
 !
+banner login ^C
+                 ______________________________    ________         __________      ______
+_________  _________  __ )___  _/_  __ \_  ___/    __  ___/__      ____(_)_  /_________  /_
+_  _ \_  |/_/  _ \_  __  |__  / _  / / /____ \     _____ \__ | /| / /_  /_  __/  ___/_  __ \
+/  __/_>  < /  __/  /_/ /__/ /  / /_/ /____/ /     ____/ /__ |/ |/ /_  / / /_ / /__ _  / / /
+\___//_/|_| \___//_____/ /___/  \____/ /____/      /____/ ____/|__/ /_/  \__/ \___/ /_/ /_/
+____________________________________________________________________________________________
+                Login with your correct username and correct password.
+____________________________________________________________________________________________
+^C
+banner motd ^C
+                              (        )   (
+                          (   )\ )  ( /(   )\ )
+          (     )   (   ( )\ (()/(  )\()) (()/(
+         ))\ ( /(  ))\  )((_) /(_))((_)\   /(_))
+        /((_))\())/((_)((_)_ (_))    ((_) (_))
+       (_)) ((_)\(_))   | _ )|_ _|  / _ \ / __|
+       / -_)\ \ // -_)  | _ \ | |  | (_) |\__ \
+       \___|/_\_\\___|  |___/|___|  \___/ |___/
+# # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                     #
+#                     WARNING                         #
+#                                                     #
+#     UNAUTHORIZED ACCESS IS STRICTLY PROHIBITED.     #
+#                                                     #
+#   ===============================================   #
+#                                                     #
+#   All activities on this network are monitored      #
+#   and logged for security purposes. Unauthorized    #
+#   access attempts or activities will be reported    #
+#   to the appropriate authorities and may result     #
+#   in disciplinary action, termination of access,    #
+#   and/or legal proceedings.                         #
+#                                                     #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # #
+^C
 !
 line con 0
 line vty 5 15
