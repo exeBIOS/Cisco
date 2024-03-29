@@ -215,8 +215,9 @@ ________________________________________________________________________________
 
 @
 ```
->[tip]
+>[!tip]
 >You can do cool ASCII art by going on ASCII art generators and typing text like this [ASCII Art generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+
 >[!warning]
 >The Switch's CLI does **NOT** inlcude other characters then the printable ones. Basically all the letters and symbols that you will find on a basic american querty. You can also visite the followinf website which will indicate the [Printable Characters](https://www.ascii-code.com/characters/printable-characters#:~:text=ASCII%20printable%20characters%20are%20the,text%20and%20other%20visual%20content.)
 
