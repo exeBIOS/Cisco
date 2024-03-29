@@ -164,7 +164,7 @@ To log into the switch with ssh you need a super admin user.
 username <username> privilege 15 secret <password>
 ```
 
-Install SSH on switch
+## Install SSH on switch
 
 `switch(config)#`
 
