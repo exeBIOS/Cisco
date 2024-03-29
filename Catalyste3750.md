@@ -10,17 +10,17 @@ Here is my lab switch, i test configurations on it.
 >The switch used for this demonstration does not have a USB port.
 
 >[!important]
->When a word is between quotes like this: <example> dont implement the quotes see this as a variable.
+>When a word is between quotes like this: "example" dont implement the quotes see this as a variable.
 >
 >Example:
 >
 >Create a vlan:
 >
->vlan <name>
+>vlan "name"
 >
 >Dont do this:
 >
->vlan <exebios>
+>vlan "exebios"
 >
 >Do this:
 >
@@ -50,14 +50,14 @@ We are going to configure a **Vlan** for port number 2 a.k.a 1/0/2.
 ## Create the **Vlan**
 
 ```
-Vlan <number>
+Vlan "number"
 ```
 
 Let's change the Vlan's name, first go into vlan configuration mode.
 
 `Switch(config)#`
 ```
-vlan <number>
+vlan "number"
 ```
 
 `Switch(config-vlan)#`
@@ -65,7 +65,7 @@ vlan <number>
 Then change the vlan's name
 
 ```
-vlan <number> <name>
+vlan "number" "name"
 ```
 ## Attribute the vlan to a port
 Now let's attribute the vlan to port number 2 a.k.a 1/0/2
@@ -127,7 +127,7 @@ VLAN Name                             Status    Ports
 
                                                 Gi1/0/2
 
-<vlan number>   <vlan name>                            active    Fa1/0/2
+"vlan number"   "vlan name"                            active    Fa1/0/2
 ```
 
 ## Add an IP for SSh
@@ -142,7 +142,7 @@ conf t
 `switch(config)#`
 
 ```
-interface vlan <number>
+interface vlan "number"
 ```
 `switch(config-if)#`
 
@@ -161,7 +161,7 @@ To log into the switch with ssh you need a super admin user.
 
 `switch(config)#`
 ```
-username <username> privilege 15 secret <password>
+username "username" privilege 15 secret "password"
 ```
 
 ## Install SSH on switch
@@ -278,7 +278,7 @@ boot-end-marker
 !
 enable secret 5 $1$Y8Ry$6kXyBagbGqR3MlPhkOHvf0
 !
-username exebios privilege 15 secret 5 $1$dMKH$wT7zZ409nihK7lIxQKoS00
+username "username" privilege 15 secret 5 $1$dMKH$wT7zZ409nihK7lIxQKoS00
 !
 !
 aaa new-model
