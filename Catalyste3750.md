@@ -12,11 +12,11 @@ Here is my lab switch, i test configurations on it.
 >
 >Example:
 >
->CCreate a vlan:
+>Create a vlan:
 >
 >vlan "name"
 >
-> Dont do this:
+>Dont do this:
 >
 >vlan "exebios"
 >
