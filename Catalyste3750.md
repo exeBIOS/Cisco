@@ -155,3 +155,19 @@ Go back into enable mode and type
 ```
 show interface vlan <vlan number>
 ```
+## Create Super Admin User
+
+To log into the switch with ssh you need a super admin user.
+
+`switch(config)#`
+```
+username <username> privilege 15 secret <password>
+```
+
+Install SSH on switch
+
+`switch(config)#`
+
+```
+ip ssh version 2
+```
