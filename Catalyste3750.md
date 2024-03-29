@@ -226,31 +226,31 @@ Now lets make a banner that will appear when the user logs in !
 `switch(config)#`
 ```
 banner motd @
-                              (        )   (
-                          (   )\ )  ( /(   )\ )
-          (     )   (   ( )\ (()/(  )\()) (()/(
-         ))\ ( /(  ))\  )((_) /(_))((_)\   /(_))
-        /((_))\())/((_)((_)_ (_))    ((_) (_))
-       (_)) ((_)\(_))   | _ )|_ _|  / _ \ / __|
-       / -_)\ \ // -_)  | _ \ | |  | (_) |\__ \
-       \___|/_\_\\___|  |___/|___|  \___/ |___/
+                                                (        )   (
+                                            (   )\ )  ( /(   )\ )
+                            (     )   (   ( )\ (()/(  )\()) (()/(
+                           ))\ ( /(  ))\  )((_) /(_))((_)\   /(_))
+                          /((_))\())/((_)((_)_ (_))    ((_) (_))
+                         (_)) ((_)\(_))   | _ )|_ _|  / _ \ / __|
+                         / -_)\ \ // -_)  | _ \ | |  | (_) |\__ \
+                         \___|/_\_\\___|  |___/|___|  \___/ |___/
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # #
-#                                                     #
-#                     WARNING                         #
-#                                                     #
-#     UNAUTHORIZED ACCESS IS STRICTLY PROHIBITED.     #
-#                                                     #
-#   ===============================================   #
-#                                                     #
-#   All activities on this network are monitored      #
-#   and logged for security purposes. Unauthorized    #
-#   access attempts or activities will be reported    #
-#   to the appropriate authorities and may result     #
-#   in disciplinary action, termination of access,    #
-#   and/or legal proceedings.                         #
-#                                                     #
-# # # # # # # # # # # # # # # # # # # # # # # # # # # #
+                  # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+                  #                                                     #
+                  #                     WARNING                         #
+                  #                                                     #
+                  #     UNAUTHORIZED ACCESS IS STRICTLY PROHIBITED.     #
+                  #                                                     #
+                  #   ===============================================   #
+                  #                                                     #
+                  #   All activities on this network are monitored      #
+                  #   and logged for security purposes. Unauthorized    #
+                  #   access attempts or activities will be reported    #
+                  #   to the appropriate authorities and may result     #
+                  #   in disciplinary action, termination of access,    #
+                  #   and/or legal proceedings.                         #
+                  #                                                     #
+                  # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 @
 ```
 
@@ -413,30 +413,31 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________
 ^C
 banner motd ^C
-                              (        )   (
-                          (   )\ )  ( /(   )\ )
-          (     )   (   ( )\ (()/(  )\()) (()/(
-         ))\ ( /(  ))\  )((_) /(_))((_)\   /(_))
-        /((_))\())/((_)((_)_ (_))    ((_) (_))
-       (_)) ((_)\(_))   | _ )|_ _|  / _ \ / __|
-       / -_)\ \ // -_)  | _ \ | |  | (_) |\__ \
-       \___|/_\_\\___|  |___/|___|  \___/ |___/
-# # # # # # # # # # # # # # # # # # # # # # # # # # # #
-#                                                     #
-#                     WARNING                         #
-#                                                     #
-#     UNAUTHORIZED ACCESS IS STRICTLY PROHIBITED.     #
-#                                                     #
-#   ===============================================   #
-#                                                     #
-#   All activities on this network are monitored      #
-#   and logged for security purposes. Unauthorized    #
-#   access attempts or activities will be reported    #
-#   to the appropriate authorities and may result     #
-#   in disciplinary action, termination of access,    #
-#   and/or legal proceedings.                         #
-#                                                     #
-# # # # # # # # # # # # # # # # # # # # # # # # # # # #
+                                                (        )   (
+                                            (   )\ )  ( /(   )\ )
+                            (     )   (   ( )\ (()/(  )\()) (()/(
+                           ))\ ( /(  ))\  )((_) /(_))((_)\   /(_))
+                          /((_))\())/((_)((_)_ (_))    ((_) (_))
+                         (_)) ((_)\(_))   | _ )|_ _|  / _ \ / __|
+                         / -_)\ \ // -_)  | _ \ | |  | (_) |\__ \
+                         \___|/_\_\\___|  |___/|___|  \___/ |___/
+
+                  # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+                  #                                                     #
+                  #                     WARNING                         #
+                  #                                                     #
+                  #     UNAUTHORIZED ACCESS IS STRICTLY PROHIBITED.     #
+                  #                                                     #
+                  #   ===============================================   #
+                  #                                                     #
+                  #   All activities on this network are monitored      #
+                  #   and logged for security purposes. Unauthorized    #
+                  #   access attempts or activities will be reported    #
+                  #   to the appropriate authorities and may result     #
+                  #   in disciplinary action, termination of access,    #
+                  #   and/or legal proceedings.                         #
+                  #                                                     #
+                  # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 ^C
 !
 line con 0
