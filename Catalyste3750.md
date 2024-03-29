@@ -5,7 +5,9 @@ Here is my lab switch, i test configurations on it.
 >[!caution]
 >If for any reason you need to **RESET FACTORY** the switch be **CAUTIOUS**, some commands can erase the IOS of the switch and delete all the content of any device connected to USB on the Switch.
 >
->To fix this you can download the correct IOS file for your switch on the [Cisco Software Versions](https://software.cisco.com/research/home?pid=&sid=&cr=)
+>To fix this you can download the correct IOS file for your switch on the [Cisco Software Versions](https://software.cisco.com/research/home?pid=&sid=&cr=) and boot it back on the switch.
+>
+>The switch used for this demonstration does not have a USB port.
 
 >[!important]
 >When a word is between quotes like this: "example" dont implement the quotes see this as a variable.
