@@ -3,7 +3,7 @@ Here is my lab switch, i test configurations on it.
 ## Information
 
 >[!caution]
->If for any reason you need to **FACTORY RESET** the switch be **CAUTIOUS**, some commands can erase the IOS of the switch and delete all the content of any device connected to USB on the Switch.
+>If for any reason you need to **RESET FACTORY** the switch be **CAUTIOUS**, some commands can erase the IOS of the switch and delete all the content of any device connected to USB on the Switch.
 >
 >To fix this you can download the correct IOS file for your switch on the [Cisco Software Versions](https://software.cisco.com/research/home?pid=&sid=&cr=)
 
@@ -24,6 +24,11 @@ Here is my lab switch, i test configurations on it.
 >
 >vlan exebios
 
+>[!tip]
+>This CLI has a lot of short cuts just like a regular cmd or linuc termianl you can press `tab` to complete the command faster.
+>
+>Some words can also be shortened like fore enable mode dont type **enable** just **en** and **configure terminal** type **conf t**
+## Process
 Enter **Enable Mode**
 
 `Switch>`
@@ -53,21 +58,23 @@ Let's change the Vlan's name, first go into vlan configuration mode.
 vlan "number"
 ```
 
-`Switch(config-vlan)`
+`Switch(config-vlan)#`
 
 Then change the vlan's name
 
 ```
 vlan "number" "name"
 ```
-
+## Attribute the vlan to a port
 Now let's attribute the vlan to port number 2 a.k.a 1/0/2
 
 Go back into configuration mode
 
+`Switch(config-vlan)#`
 ```
-end
+exit
 ```
+`Switch(config)#`
 
 Access the Interface 1/0/2
 ```
@@ -81,11 +88,12 @@ Attribute the vlan you created with the port 1/0/2
 switchport access vlan42
 ```
 
-Go back into configuration mode
+Go back into enable mode
 
 ```
 end
 ```
+`Switch#`
 
 To see if the configuration worked type
 
