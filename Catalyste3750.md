@@ -171,3 +171,21 @@ username <username> privilege 15 secret <password>
 ```
 ip ssh version 2
 ```
+
+## Configurer la méthode d'authentifiaction
+
+`switch(config)#`
+
+```
+aaa new-model
+```
+```
+aaa authentication login default local
+```
+
+### Ajouter un mots de passe enable
+
+`switch(config)#`
+```
+enable secret <password>
+```
