@@ -87,7 +87,7 @@ Interface FastEthernet 1/0/2
 Attribute the vlan you created with the port 1/0/2
 
 ```
-switchport access vlan42
+switchport access vlan 42
 ```
 
 Go back into enable mode
