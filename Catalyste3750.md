@@ -258,6 +258,8 @@ This combo can be awkward while loging in with a serial cable because both the l
 ## Conclusion
 
 Here is our configuration so far
+>[!important]
+>If you want to use this template make sure ton change the values between quotes **"example"**.
 
 ```
 sh run
