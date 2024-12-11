@@ -9,7 +9,6 @@ Le switch envoie une trame a tout ses ports ils renvoient une trame le switch as
 graph TD;
   Réseau-->Disponibilité;
   Réseau-->QoS;
-  Réseau-->
 
 ```
   
